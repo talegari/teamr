@@ -4,7 +4,9 @@
 \name{card_section}
 \alias{card_section}
 \title{Create a \code{card_section} Structure With \code{teamr}}
-\format{An \code{\link{R6Class}} generator object}
+\format{
+An \code{\link{R6Class}} generator object
+}
 \usage{
 # sec <- card_section$new()
 }
@@ -62,4 +64,147 @@ cc$print()
 cc$send()
 }
 }
-\keyword{datasets}
+\section{Methods}{
+\subsection{Public methods}{
+\itemize{
+\item \href{#method-card_section-new}{\code{card_section$new()}}
+\item \href{#method-card_section-print}{\code{card_section$print()}}
+\item \href{#method-card_section-title}{\code{card_section$title()}}
+\item \href{#method-card_section-text}{\code{card_section$text()}}
+\item \href{#method-card_section-activity_title}{\code{card_section$activity_title()}}
+\item \href{#method-card_section-activity_sub_title}{\code{card_section$activity_sub_title()}}
+\item \href{#method-card_section-activity_image}{\code{card_section$activity_image()}}
+\item \href{#method-card_section-activity_text}{\code{card_section$activity_text()}}
+\item \href{#method-card_section-add_fact}{\code{card_section$add_fact()}}
+\item \href{#method-card_section-add_link_button}{\code{card_section$add_link_button()}}
+\item \href{#method-card_section-add_image}{\code{card_section$add_image()}}
+\item \href{#method-card_section-dump}{\code{card_section$dump()}}
+\item \href{#method-card_section-clone}{\code{card_section$clone()}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-new"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$new()}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-print"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-print}{}}}
+\subsection{Method \code{print()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$print(...)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-title"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-title}{}}}
+\subsection{Method \code{title()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$title(sec_title)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-text"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-text}{}}}
+\subsection{Method \code{text()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$text(sec_text)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-activity_title"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-activity_title}{}}}
+\subsection{Method \code{activity_title()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$activity_title(sec_activity_title)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-activity_sub_title"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-activity_sub_title}{}}}
+\subsection{Method \code{activity_sub_title()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$activity_sub_title(sec_activitiy_subtitle)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-activity_image"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-activity_image}{}}}
+\subsection{Method \code{activity_image()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$activity_image(sec_activitiy_image)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-activity_text"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-activity_text}{}}}
+\subsection{Method \code{activity_text()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$activity_text(sec_activitiy_text)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-add_fact"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-add_fact}{}}}
+\subsection{Method \code{add_fact()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$add_fact(fname, fvalue)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-add_link_button"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-add_link_button}{}}}
+\subsection{Method \code{add_link_button()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$add_link_button(btext, burl)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-add_image"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-add_image}{}}}
+\subsection{Method \code{add_image()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$add_image(sec_image, sec_title = NULL)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-dump"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-dump}{}}}
+\subsection{Method \code{dump()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$dump()}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-card_section-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-card_section-clone}{}}}
+\subsection{Method \code{clone()}}{
+The objects of this class are cloneable with this method.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{card_section$clone(deep = FALSE)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{deep}}{Whether to make a deep clone.}
+}
+\if{html}{\out{</div>}}
+}
+}
+}

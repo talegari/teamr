@@ -1,9 +1,11 @@
 #' Create a \code{connector_card} Structure With \code{teamr}
 #'
-#' @description \code{connector_card} is at the very heart of the \code{teamr} package.
+#' @description \code{connector_card} is at the very heart of the \code{teamr}
+#'   package.
 #'
 #' @details Assemble \code{connector_card} objects into a \code{connector_card}
-#' structure and use the methods to append, modify or send your card to the webhook specified.
+#'   structure and use the methods to append, modify or send your card to the
+#'   webhook specified.
 #'
 #' @docType class
 #' @importFrom R6 R6Class
@@ -13,13 +15,14 @@
 #' \describe{
 #'   \item{\code{connector_card$new(hookurl, proxies, http_timeout)}}{Creates a new \code{connector_card}.}
 #'   \item{\code{text(mtext)}}{Change the \code{text} field of the card}
+#'   \item{\code{add_text(mtext)}}{Append to the \code{text} field of the card}
 #'   \item{\code{title(mtitle)}}{Change the \code{title} field of the card}
 #'   \item{\code{summary(msummary)}}{Change the \code{summary} field of the card.}
 #'   \item{\code{color(mcolor)}}{Change the default theme color.}
 #'   \item{\code{add_link_button(btext, burl)}}{Add button with links.}
 #'   \item{\code{newhook(nurl)}}{Change webhook address.}
 #'   \item{\code{print()}}{Print out the current hookurl and payload}
-#'   \item{\code{send()}}{Send \code{connector_card} to specified Microsoft Teams incomeing webhook URL.}
+#'   \item{\code{send()}}{Send \code{connector_card} to specified Microsoft Teams incoming webhook URL.}
 #' }
 #'
 #' @section Properties:
@@ -120,6 +123,23 @@ connector_card <- R6Class("connector_card", list(
 
   },
 
+  add_text = function(mtext, sep = "<br>"){
+    ###
+    # Append msg to 'text' part of payload
+    ###
+
+    stopifnot(is.character(mtext) && length(mtxt) == 1)
+    stopifnot(is.character(sep) && length(sep) == 1)
+
+    if (!exists('text', where = self$payload)) { # no text yet
+      self$payload$text = mtext # just set to 'mtext'
+    } else {
+      # append to existing 'text'
+      self$payload$text = paste(self$payload$text, mtext, sep = sep)
+    }
+
+    return(invisible(NULL))
+  },
 
   send = function(){
     res <- httr::POST(
@@ -135,4 +155,5 @@ connector_card <- R6Class("connector_card", list(
     else return(res)
 
     }
-))
+  )
+)

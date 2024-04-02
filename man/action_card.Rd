@@ -4,7 +4,9 @@
 \name{action_card}
 \alias{action_card}
 \title{Create a \code{action_card} Structure With \code{teamr}}
-\format{An \code{\link{R6Class}} generator object}
+\format{
+An \code{\link{R6Class}} generator object
+}
 \usage{
 # ac <- action_card$new(type = "ActionCard", name = "Add comment")
 }
@@ -49,4 +51,91 @@ cc$send()
 }
 
 }
-\keyword{datasets}
+\section{Methods}{
+\subsection{Public methods}{
+\itemize{
+\item \href{#method-action_card-new}{\code{action_card$new()}}
+\item \href{#method-action_card-add_actions}{\code{action_card$add_actions()}}
+\item \href{#method-action_card-add_text_inputs}{\code{action_card$add_text_inputs()}}
+\item \href{#method-action_card-add_date_inputs}{\code{action_card$add_date_inputs()}}
+\item \href{#method-action_card-add_mchoice_inputs}{\code{action_card$add_mchoice_inputs()}}
+\item \href{#method-action_card-dump}{\code{action_card$dump()}}
+\item \href{#method-action_card-clone}{\code{action_card$clone()}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-new"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$new(type, name)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-add_actions"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-add_actions}{}}}
+\subsection{Method \code{add_actions()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$add_actions(
+  type = "HttpPOST",
+  name = "Save",
+  target = "http://..."
+)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-add_text_inputs"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-add_text_inputs}{}}}
+\subsection{Method \code{add_text_inputs()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$add_text_inputs(id, title, is_multi_line)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-add_date_inputs"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-add_date_inputs}{}}}
+\subsection{Method \code{add_date_inputs()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$add_date_inputs(id, title)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-add_mchoice_inputs"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-add_mchoice_inputs}{}}}
+\subsection{Method \code{add_mchoice_inputs()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$add_mchoice_inputs(id, title, is_multi_select, choices)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-dump"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-dump}{}}}
+\subsection{Method \code{dump()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$dump()}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-action_card-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-action_card-clone}{}}}
+\subsection{Method \code{clone()}}{
+The objects of this class are cloneable with this method.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{action_card$clone(deep = FALSE)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{deep}}{Whether to make a deep clone.}
+}
+\if{html}{\out{</div>}}
+}
+}
+}

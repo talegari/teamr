@@ -1,12 +1,14 @@
 Package: teamr
 Title: Send Formatted Messages, Images and Objects to Microsoft 'Teams'
-Version: 0.0.1
-Authors@R: 
+Version: 0.0.2
+Authors@R: c(
     person(given = "Michael",
            family = "Yan",
            role = c("aut", "cre"),
            email = "tanbingy@gmail.com",
-           comment = c(ORCID = "https://orcid.org/0000-0002-3845-0934"))
+           comment = c(ORCID = "https://orcid.org/0000-0002-3845-0934")),
+    person("Srikanth", "Komala Sheshachala", email = "sri.teach@gmail.com", role = "ctb")
+    )
 URL: https://github.com/wwwjk366/teamr
 BugReports: https://github.com/wwwjk366/teamr/issues
 Description: Package of wrapper functions using R6 class to send requests to 
@@ -21,4 +23,4 @@ Imports:
     jsonlite,
     R6
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 6.1.1
+RoxygenNote: 7.3.1

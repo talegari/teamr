@@ -4,16 +4,20 @@
 \name{connector_card}
 \alias{connector_card}
 \title{Create a \code{connector_card} Structure With \code{teamr}}
-\format{An \code{\link{R6Class}} generator object}
+\format{
+An \code{\link{R6Class}} generator object
+}
 \usage{
 # cc <- connector_card$new("https://outlook.office.com.....")
 }
 \description{
-\code{connector_card} is at the very heart of the \code{teamr} package.
+\code{connector_card} is at the very heart of the \code{teamr}
+package.
 }
 \details{
 Assemble \code{connector_card} objects into a \code{connector_card}
-structure and use the methods to append, modify or send your card to the webhook specified.
+structure and use the methods to append, modify or send your card to the
+webhook specified.
 }
 \section{Methods}{
 
@@ -21,13 +25,14 @@ structure and use the methods to append, modify or send your card to the webhook
 \describe{
 \item{\code{connector_card$new(hookurl, proxies, http_timeout)}}{Creates a new \code{connector_card}.}
 \item{\code{text(mtext)}}{Change the \code{text} field of the card}
+\item{\code{add_text(mtext)}}{Append to the \code{text} field of the card}
 \item{\code{title(mtitle)}}{Change the \code{title} field of the card}
 \item{\code{summary(msummary)}}{Change the \code{summary} field of the card.}
 \item{\code{color(mcolor)}}{Change the default theme color.}
 \item{\code{add_link_button(btext, burl)}}{Add button with links.}
 \item{\code{newhook(nurl)}}{Change webhook address.}
 \item{\code{print()}}{Print out the current hookurl and payload}
-\item{\code{send()}}{Send \code{connector_card} to specified Microsoft Teams incomeing webhook URL.}
+\item{\code{send()}}{Send \code{connector_card} to specified Microsoft Teams incoming webhook URL.}
 }
 }
 
@@ -57,4 +62,147 @@ cc$send()
 }
 
 }
-\keyword{datasets}
+\section{Methods}{
+\subsection{Public methods}{
+\itemize{
+\item \href{#method-connector_card-new}{\code{connector_card$new()}}
+\item \href{#method-connector_card-print}{\code{connector_card$print()}}
+\item \href{#method-connector_card-text}{\code{connector_card$text()}}
+\item \href{#method-connector_card-title}{\code{connector_card$title()}}
+\item \href{#method-connector_card-summary}{\code{connector_card$summary()}}
+\item \href{#method-connector_card-color}{\code{connector_card$color()}}
+\item \href{#method-connector_card-add_link_button}{\code{connector_card$add_link_button()}}
+\item \href{#method-connector_card-new_hook}{\code{connector_card$new_hook()}}
+\item \href{#method-connector_card-add_section}{\code{connector_card$add_section()}}
+\item \href{#method-connector_card-add_potential_action}{\code{connector_card$add_potential_action()}}
+\item \href{#method-connector_card-add_text}{\code{connector_card$add_text()}}
+\item \href{#method-connector_card-send}{\code{connector_card$send()}}
+\item \href{#method-connector_card-clone}{\code{connector_card$clone()}}
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-new"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-new}{}}}
+\subsection{Method \code{new()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$new(hookurl, proxies = NULL, http_timeout = httr::timeout(3))}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-print"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-print}{}}}
+\subsection{Method \code{print()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$print(...)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-text"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-text}{}}}
+\subsection{Method \code{text()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$text(mtext)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-title"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-title}{}}}
+\subsection{Method \code{title()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$title(mtitle)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-summary"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-summary}{}}}
+\subsection{Method \code{summary()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$summary(msummary)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-color"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-color}{}}}
+\subsection{Method \code{color()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$color(mcolor)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-add_link_button"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-add_link_button}{}}}
+\subsection{Method \code{add_link_button()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$add_link_button(btext, burl)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-new_hook"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-new_hook}{}}}
+\subsection{Method \code{new_hook()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$new_hook(nurl)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-add_section"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-add_section}{}}}
+\subsection{Method \code{add_section()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$add_section(new_section)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-add_potential_action"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-add_potential_action}{}}}
+\subsection{Method \code{add_potential_action()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$add_potential_action(new_paction)}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-add_text"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-add_text}{}}}
+\subsection{Method \code{add_text()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$add_text(mtext, sep = "<br>")}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-send"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-send}{}}}
+\subsection{Method \code{send()}}{
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$send()}\if{html}{\out{</div>}}
+}
+
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-connector_card-clone"></a>}}
+\if{latex}{\out{\hypertarget{method-connector_card-clone}{}}}
+\subsection{Method \code{clone()}}{
+The objects of this class are cloneable with this method.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{connector_card$clone(deep = FALSE)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{deep}}{Whether to make a deep clone.}
+}
+\if{html}{\out{</div>}}
+}
+}
+}
